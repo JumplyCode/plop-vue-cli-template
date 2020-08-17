@@ -8,8 +8,7 @@ function resolve(dir) {
 const WEBTITLE = '项目名称'; // 项目名称
 const PORT = 6001; // 端口
 const PUBLICPATH = 'wonders'; // 上下文
-const PROXY = 'https://www.baidu.com'; // 测试代理
-// const PROXY = 'http://testixian.cn'; // 生产代理
+const PROXY = 'https://www.baidu.com';
 
 module.exports = {
   publicPath: process.env.NODE_ENV === "production" ? `/${PUBLICPATH}/` : "/",
