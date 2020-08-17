@@ -1,0 +1,70 @@
+/*
+ * common中公共用样式
+ * 颜色、边框、字体等
+*/
+
+$wdr-main-color: #3F83EE; // 主色
+$wdr-extend-color: #E1EFFF; // 延伸色
+$wdr-bg-color: #F4F6F8; // 全局背景色
+$wdr-card-color: #F8F8F8; // 卡片背景色
+$wdr-assist-color: #FFA61F; // 辅助色
+$wdr-stress-color: #EB3242; // 强调色
+$wdr-success-color: #0CC214; // 成功色
+
+$wdr-main-fontColor: #333333; // 字体重要色
+$wdr-body-fontColor: #666666; // 字体主色
+$wdr-assist-fontColor: #999999; // 字体辅色
+
+$wdr-oneTitle-fontSize: 1.375rem; // 一级标题字体大小
+$wdr-twoTitle-fontSize: 1.25rem; // 二级标题字体大小
+$wdr-threeTitle-fontSize: 1.125rem; // 三级标题字体大小
+$wdr-main-fontSize: .875rem; // 正文字体大小
+$wdr-minor-fontSize: .75rem; // 辅助字体大小
+$wdr-explain-fontSize: .625rem; // 说明字体大小
+
+// 边框
+@mixin wdr-boder($color: #eee, $style: 'solid', $size: .0625rem) {
+    border: $color $style $size;
+}
+
+// 按钮
+@mixin wdr-button ($width: 100%, $height: 2.75rem, $background: #3F83EE, $bgactive: #5393f8, $radius: .25rem, $color: #fff, $fontsize: .9375rem) {
+    width: $width;
+    height: $height;
+    line-height: $height;
+    background: $background;
+    border-radius: $radius;
+    text-align: center;
+    color: $color;
+    font-size: $fontsize;
+    &:active {
+        background: $bgactive;
+    }
+}
+
+
+// flex: flex-start/flex-end
+@mixin flex($justify-content: space-between, $align-items: center, $align-content: center, $flex-wrap: wrap) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    align-content: $align-content;
+    flex-wrap: $flex-wrap;
+}
+
+@mixin touch($touch: touch) {
+    -webkit-overflow-scrolling: $touch;
+}
+
+// gradient
+@mixin gradient($direction: right, $start-color: transparent, $end-color: $wdr-main-color) {
+    background-image: linear-gradient(to $direction, $start-color, $end-color);
+}
+
+
+
+
+
+
+
+

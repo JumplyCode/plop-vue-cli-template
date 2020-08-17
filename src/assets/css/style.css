@@ -1,0 +1,138 @@
+/*
+ * style.js中基本样式
+ * 请勿修改此文件
+*/
+
+html, body, div, span, a, object, iframe, h1, h2, h3, h4, h5, h6, p, button, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary, canvas {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+}
+
+article, aside, figure, footer, header, nav, section, details, summary {
+  display: block;
+}
+html {
+  display: block;
+  box-sizing: border-box;
+}
+html,
+body{
+  min-height: 100%;
+  background: #f4f6f8;
+}
+*, 
+*:before, 
+*:after {
+  box-sizing: inherit;
+}
+img,
+object,
+embed {
+  max-width: 100%;
+  display: block;
+}
+ul,ol {
+  list-style: none;
+}
+.ellipsis {
+  white-space: nowrap;
+  word-break: keep-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+a,
+a:focus {
+  outline: 0 none;
+  text-decoration: none;
+  vertical-align: baseline; 
+  background: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  color: #333;
+}
+pre {
+  white-space: pre; /* CSS2 */
+  white-space: pre-wrap; /* CSS 2.1 */
+  white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+  word-wrap: break-word; /* IE */
+}
+table {
+  border-collapse: collapse; 
+  border-spacing: 0;
+}
+th {
+  font-weight: bold; 
+  vertical-align: bottom;
+}
+td {
+  font-weight: normal; 
+  vertical-align: top;
+}
+
+input, select {
+  vertical-align: middle;
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+  -webkit-appearance: none;
+  outline:none;
+  cursor: pointer;
+}
+select, input, textarea {
+  font: 99% sans-serif;
+}
+.none {
+  display: none !important;
+  display: none;
+}
+
+::-webkit-input-placeholder,
+::-webkit-textarea-placeholder  { /* WebKit, Blink, Edge */
+  color: #999;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+ color: #999;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+ color: #999;
+}
+:-ms-textarea-placeholder,
+:-ms-textarea-placeholder { /* Internet Explorer 10-11 */
+ color: #999;
+}
+
+hr{
+  height:1px; 
+  margin: 10px 0;
+  border:none;
+  border-top:1px dashed #ccc;
+}
+
+ /* iPhone5 */
+ @media screen 
+ and (min-device-width : 320px)
+ and (min-device-height : 500px)
+ and (max-device-height : 570px)
+ and (orientation : portrait)
+ and (-webkit-min-device-pixel-ratio : 2) {
+     body,html{
+         font-size: 14px;
+         font-size: 14px !important;
+     }
+ }
+ 
+ /* iPhone6 */
+ @media screen and (min-device-width : 375px)
+ and (max-device-width : 768px)
+ and (orientation : portrait)
+ and (-webkit-min-device-pixel-ratio : 2) {
+     body,html{
+         font-size: 16px;
+         font-size: 16px !important;
+     }
+ }
