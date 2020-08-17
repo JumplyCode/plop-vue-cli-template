@@ -8,8 +8,7 @@ function resolve(dir) {
 const WEBTITLE = '{{projectName_ch}}'; // 项目名称中文
 const PORT = 6001; // 端口
 const PUBLICPATH = 'web-{{projectName}}'; // 上下文
-const PROXY = '{{proxy}}'; // 测试代理https://testycsmy.kgxj.haikou.gov.cn
-// const PROXY = 'http://testixian.cn'; // 生产代理
+const PROXY = '{{proxy}}'; 
 
 module.exports = {
   publicPath: process.env.NODE_ENV === "production" ? `/${PUBLICPATH}/` : "/",
